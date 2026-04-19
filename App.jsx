@@ -5,6 +5,9 @@ import { SimulationProvider } from './context/SimulationContext';
 import LandingPage from './components/LandingPage';
 import LoginScreens from './components/LoginScreens';
 import DashboardLayout from './components/DashboardLayout';
+import CitizenPortal from './components/CitizenPortal';
+import PumpDispenser from './components/PumpDispenser';
+import LogisticsTerminal from './components/LogisticsTerminal';
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginScreens />} />
           <Route path="/dashboard" element={<DashboardLayout />} />
+          <Route path="/citizen" element={<CitizenPortal />} />
+          <Route path="/pump" element={<PumpDispenser />} />
+          <Route path="/logistics" element={<LogisticsTerminal />} />
         </Routes>
       </SimulationProvider>
     </BrowserRouter>
